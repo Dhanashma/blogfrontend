@@ -5,16 +5,16 @@
 2 info using npm@3.10.10
 3 info using node@v6.17.1
 4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info lifecycle react-jwt-auth@0.1.0~prestart: react-jwt-auth@0.1.0
-6 silly lifecycle react-jwt-auth@0.1.0~prestart: no script for prestart, continuing
-7 info lifecycle react-jwt-auth@0.1.0~start: react-jwt-auth@0.1.0
-8 verbose lifecycle react-jwt-auth@0.1.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle react-jwt-auth@0.1.0~start: PATH: /home/arjunr/.nvm/versions/node/v6.17.1/lib/node_modules/npm/bin/node-gyp-bin:/home/arjunr/Downloads/react-jwt-auth-master/node_modules/.bin:/home/arjunr/.nvm/versions/node/v6.17.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/arjunr/go/bin:/home/arjunr/go/bin
-10 verbose lifecycle react-jwt-auth@0.1.0~start: CWD: /home/arjunr/Downloads/react-jwt-auth-master
-11 silly lifecycle react-jwt-auth@0.1.0~start: Args: [ '-c', 'react-scripts start' ]
-12 silly lifecycle react-jwt-auth@0.1.0~start: Returned: code: 1  signal: null
-13 info lifecycle react-jwt-auth@0.1.0~start: Failed to exec start script
-14 verbose stack Error: react-jwt-auth@0.1.0 start: `react-scripts start`
+5 info lifecycle blog-frontend@0.1.0~prestart: blog-frontend@0.1.0
+6 silly lifecycle blog-frontend@0.1.0~prestart: no script for prestart, continuing
+7 info lifecycle blog-frontend@0.1.0~start: blog-frontend@0.1.0
+8 verbose lifecycle blog-frontend@0.1.0~start: unsafe-perm in lifecycle true
+9 verbose lifecycle blog-frontend@0.1.0~start: PATH: /home/arjunr/.nvm/versions/node/v6.17.1/lib/node_modules/npm/bin/node-gyp-bin:/home/arjunr/Downloads/blog-frontend/node_modules/.bin:/home/arjunr/.nvm/versions/node/v6.17.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/arjunr/go/bin:/home/arjunr/go/bin
+10 verbose lifecycle blog-frontend@0.1.0~start: CWD: /home/arjunr/Downloads/blog-frontend
+11 silly lifecycle blog-frontend@0.1.0~start: Args: [ '-c', 'react-scripts start' ]
+12 silly lifecycle blog-frontend@0.1.0~start: Returned: code: 1  signal: null
+13 info lifecycle blog-frontend@0.1.0~start: Failed to exec start script
+14 verbose stack Error: blog-frontend@0.1.0 start: `react-scripts start`
 14 verbose stack Exit status 1
 14 verbose stack     at EventEmitter.<anonymous> (/home/arjunr/.nvm/versions/node/v6.17.1/lib/node_modules/npm/lib/utils/lifecycle.js:255:16)
 14 verbose stack     at emitTwo (events.js:106:13)
@@ -24,24 +24,24 @@
 14 verbose stack     at ChildProcess.emit (events.js:191:7)
 14 verbose stack     at maybeClose (internal/child_process.js:920:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:230:5)
-15 verbose pkgid react-jwt-auth@0.1.0
-16 verbose cwd /home/arjunr/Downloads/react-jwt-auth-master
+15 verbose pkgid blog-frontend@0.1.0
+16 verbose cwd /home/arjunr/Downloads/blog-frontend
 17 error Linux 5.11.0-44-generic
 18 error argv "/home/arjunr/.nvm/versions/node/v6.17.1/bin/node" "/home/arjunr/.nvm/versions/node/v6.17.1/bin/npm" "start"
 19 error node v6.17.1
 20 error npm  v3.10.10
 21 error code ELIFECYCLE
-22 error react-jwt-auth@0.1.0 start: `react-scripts start`
+22 error blog-frontend@0.1.0 start: `react-scripts start`
 22 error Exit status 1
-23 error Failed at the react-jwt-auth@0.1.0 start script 'react-scripts start'.
+23 error Failed at the blog-frontend@0.1.0 start script 'react-scripts start'.
 23 error Make sure you have the latest version of node.js and npm installed.
-23 error If you do, this is most likely a problem with the react-jwt-auth package,
+23 error If you do, this is most likely a problem with the blog-frontend package,
 23 error not with npm itself.
 23 error Tell the author that this fails on your system:
 23 error     react-scripts start
 23 error You can get information on how to open an issue for this project with:
-23 error     npm bugs react-jwt-auth
+23 error     npm bugs blog-frontend
 23 error Or if that isn't available, you can get their info via:
-23 error     npm owner ls react-jwt-auth
+23 error     npm owner ls blog-frontend
 23 error There is likely additional logging output above.
 24 verbose exit [ 1, true ]
