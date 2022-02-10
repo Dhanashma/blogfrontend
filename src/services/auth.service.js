@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://blogappdh.herokuapp.com/api/auth/";
+const API_URL = " https://whispering-wave-58096.herokuapp.com/https://blogappdh.herokuapp.com/api/auth/";
 
 class AuthService {
   login(username, password) {

@@ -1,6 +1,6 @@
 import axios from "axios";
 export default axios.create({
-  baseURL: "https://blogappdh.herokuapp.com/api",
+  baseURL: " https://whispering-wave-58096.herokuapp.com/https://blogappdh.herokuapp.com/api",
   headers: {
     "Content-type": "application/json"
   }
