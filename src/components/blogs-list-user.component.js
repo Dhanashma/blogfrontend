@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import BlogDataService from "../services/blog.service";
-import { Link } from "react-router-dom";
-export default class BlogsList extends Component {
+// import { Link } from "react-router-dom";
+export default class BlogsListUser extends Component {
   constructor(props) {
     super(props);
     this.onChangeSearchTitle = this.onChangeSearchTitle.bind(this);
@@ -9,7 +9,7 @@ export default class BlogsList extends Component {
     this.refreshList = this.refreshList.bind(this);
     this.setActiveBlog = this.setActiveBlog.bind(this);
     this.removeAllBlogs = this.removeAllBlogs.bind(this);
-    this.searchTitle = this.searchTitle.bind(this);
+    // this.searchTitle = this.searchTitle.bind(this);
     this.state = {
       blogs: [],
       currentBlog: null,
@@ -61,32 +61,32 @@ export default class BlogsList extends Component {
         console.log(e);
       });
   }
-  searchTitle() {
-    BlogDataService.findByTitle(this.state.searchTitle)
-      .then(response => {
-        this.setState({
-          blogs: response.data
-        });
-        console.log(response.data);
-      })
-      .catch(e => {
-        console.log(e);
-      });
-  }
+//   searchTitle() {
+//     BlogDataService.findByTitle(this.state.searchTitle)
+//       .then(response => {
+//         this.setState({
+//           blogs: response.data
+//         });
+//         console.log(response.data);
+//       })
+//       .catch(e => {
+//         console.log(e);
+//       });
+//   }
   render() {
-    const { searchTitle, blogs, currentBlog, currentIndex } = this.state;
+    const {  blogs, currentBlog, currentIndex } = this.state;
     return (
       <div className="list row">
         <div className="col-md-8">
           <div className="input-group mb-3">
-            <input
+            {/* <input
               type="text"
               className="form-control"
               placeholder="Search by title"
               value={searchTitle}
               onChange={this.onChangeSearchTitle}
-            />
-            <div className="input-group-append">
+            /> */}
+            {/* <div className="input-group-append">
               <button
                 className="btn btn-outline-secondary"
                 type="button"
@@ -94,7 +94,7 @@ export default class BlogsList extends Component {
               >
                 Search
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="col-md-6">
@@ -114,12 +114,12 @@ export default class BlogsList extends Component {
                 </li>
               ))}
           </ul>
-          <button
+          {/* <button
             className="m-3 btn btn-sm btn-danger"
             onClick={this.removeAllBlogs}
           >
             Remove All
-          </button>
+          </button> */}
         </div>
         <div className="col-md-6">
           {currentBlog ? (
@@ -143,12 +143,12 @@ export default class BlogsList extends Component {
                 </label>{" "}
                 {currentBlog.published ? "Published" : "Pending"}
               </div>
-              <Link
-                to={"/blog/" + currentBlog._id}
+              {/* <Link
+                to={"/blog/" + currentBlog.id}
                 className="badge badge-warning"
               >
                 Edit
-              </Link>
+              </Link> */}
             </div>
           ) : (
             <div>

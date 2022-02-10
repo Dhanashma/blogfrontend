@@ -9,10 +9,15 @@ import Login from "./components/login.component";
 import Register from "./components/register.component";
 import Home from "./components/home.component";
 import Profile from "./components/profile.component";
-import BoardUser from "./components/board-user.component";
+// import BoardUser from "./components/board-user.component";
 import BoardModerator from "./components/board-moderator.component";
-import BoardAdmin from "./components/board-admin.component";
+// import BoardAdmin from "./components/board-admin.component";
+import BlogList from "./components/blogs-list.component";
+import AddBlog from "./components/add-blog.component";
 import Blog from "./components/blog.component";
+import BlogsListUser from "./components/blogs-list-user.component";
+
+
 
 // import AuthVerify from "./common/auth-verify";
 import EventBus from "./common/EventBus";
@@ -85,16 +90,22 @@ class App extends Component {
             {showAdminBoard && (
               <li className="nav-item">
                 <Link to={"/admin"} className="nav-link">
-                  Admin Board
+                  AdminView
+                </Link>
+                <Link to={"/blog/add"} className="nav-link">
+                  Add
                 </Link>
               </li>
             )}
 
             {currentUser && (
               <li className="nav-item">
-                <Link to={"/blog"} className="nav-link">
-                  Blog
+                <Link to={"/user"} className="nav-link">
+                  UserView
                 </Link>
+                {/* <Link to={"/blog/add"} className="nav-link">
+                  Add
+                </Link> */}
               </li>
             )}
           </div>
@@ -135,10 +146,12 @@ class App extends Component {
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/profile" component={Profile} />
-            <Route path="/user" component={BoardUser} />
+            <Route path="/user" component={BlogsListUser} />
             <Route path="/mod" component={BoardModerator} />
-            <Route path="/admin" component={BoardAdmin} />
-            <Route path="/blogs" component={Blog} />
+            <Route path="/admin" component={BlogList} />
+            <Route exact path={["/blog"]} component={BlogList} />
+            <Route exact path="/blog/add" component={AddBlog} />
+            <Route path="/blog/:id" component={Blog} />
           </Switch>
         </div>
 

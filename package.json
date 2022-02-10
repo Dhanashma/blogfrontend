@@ -41,9 +41,5 @@
   },
   "devDependencies": {
     "redux-devtools-extension": "^2.13.9"
-  },
-  "description": "In this tutorial, we’re gonna build a React JWT Authentication example with LocalStorage, React Router, Axios and Bootstrap (without Redux). I will show you:",
-  "main": "index.js",
-  "author": "",
-  "license": "ISC"
+  }
 }
